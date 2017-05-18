@@ -11,6 +11,17 @@
     rgba(0,0,0,0.05) 50%,
     rgba(0,0,0,0.05) 100%
     );
+  box-shadow:
+    1px 1px white,
+    2px 2px #333,
+    3px 3px white,
+    4px 4px #666,
+    5px 5px white,
+    6px 6px #999,
+    7px 7px white,
+    8px 8px #bbb,
+    9px 9px white,
+    10px 10px #eee;
 }
 
 .badge-heading {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Table.css';
 
 const getRows = propTypes => Object.keys(propTypes).map(prop => (
@@ -25,5 +26,9 @@ const Table = ({ propTypes }) => (
     </tbody>
   </table>
 );
+
+Table.propTypes = {
+  propTypes: PropTypes.object.isRequired
+}
 
 export default Table;

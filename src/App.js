@@ -1,13 +1,11 @@
 import React from 'react';
 import deepAssign from 'deep-assign';
-// import manifest from './manifest';
-import Badge from './Badge';
+import Badge from './components/Badge';
 import data from './data';
-import Table from './Table';
+import Table from './ui/Table';
 import './App.css';
-import propTypesToObject from './propTypesToObject';
-import propTypesToDescriptions from './propTypesToDescriptions';
-// const Component = manifest.Badge.component;
+import propTypesToObject from './helpers/propTypesToObject';
+import propTypesToDescriptions from './helpers/propTypesToDescriptions';
 
 const propTypes = propTypesToObject({
   propTypes: Badge.propTypes
@@ -26,7 +24,6 @@ const App = props => (
       My Old Friend
     </Badge>
     <Table
-      component="Badge"
       propTypes={deepAssign({}, propTypes, propTypeDescriptions)}
     />
   </div>
