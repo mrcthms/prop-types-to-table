@@ -1,0 +1,22 @@
+.badge {
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 8px 16px;
+  display: inline-block;
+  overflow: hidden;
+  background: linear-gradient(
+    45deg,
+    #ffffff 0%,
+    #ffffff 50%,
+    rgba(0,0,0,0.05) 50%,
+    rgba(0,0,0,0.05) 100%
+    );
+}
+
+.badge-heading {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
